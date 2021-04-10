@@ -1,0 +1,146 @@
+[
+  {
+    "Name": "Angular Speedster Board 2000",
+    "Description": "Lorem ipsum dolor sit amet magna eros quis urna.",
+    "Price": 200,
+    "PictureUrl": "images/products/Giay_X9000L4_trang_GZ7605_01_standard.jpg",
+    "ProductTypeId": 1,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Green Angular Board 3000",
+    "Description": "Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.",
+    "Price": 150,
+    "PictureUrl": "images/products/giay-adidas-ultra-boost-20-nu-trang-hong-01-800x800_0.jpg",
+    "ProductTypeId": 1,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Core Board Speed Rush 3",
+    "Description": "Suspendisse dui purus, scelerisque at,my.",
+    "Price": 180,
+    "PictureUrl": "images/products/giay-nike-air-jordan-1-dior-replica.jpg",
+    "ProductTypeId": 1,
+    "ProductBrandId": 2
+  },
+  {
+    "Name": "Net Core Super Board",
+    "Description": "Pellentesque habitant morbi tri.",
+    "Price": 300,
+    "PictureUrl": "images/products/vans-forgotten-bones-sk8-hi-vn0a4bv6v8v-1.jpg",
+    "ProductTypeId": 1,
+    "ProductBrandId": 2
+  },
+  {
+    "Name": "React Board Super Whizzy Fast",
+    "Description": "Lorem ipsum dolor sit amet, .",
+    "Price": 250,
+    "PictureUrl": "images/products/7-38faacb3-bfff-4cb5-b0da-db57634377dc.jpg",
+    "ProductTypeId": 1,
+    "ProductBrandId": 4
+  },
+  {
+    "Name": "Typescript Entry Board",
+    "Description": "Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.",
+    "Price": 120,
+    "PictureUrl": "images/products/images (1).jpg",
+    "ProductTypeId": 1,
+    "ProductBrandId": 5
+  },
+  {
+    "Name": "Core Blue Hat",
+    "Description": "Fusce posuere, magna sed pulvinar ultri",
+    "Price": 10,
+    "PictureUrl": "images/products/b23-dior-x-daniel-arsham-high-newspaper.jpg",
+    "ProductTypeId": 2,
+    "ProductBrandId": 2
+  },
+  {
+    "Name": "Green React Woolen Hat",
+    "Description": "Suspendisse dui purus, m venenatis eleifend. Ut nonummy.",
+    "Price": 8,
+    "PictureUrl": "images/products/converse-classic-den-cao-co-fe73d640-a974-41e5-a3c0-229736b7b780.jpg",
+    "ProductTypeId": 2,
+    "ProductBrandId": 4
+  },
+  {
+    "Name": "Purple React Woolen Hat",
+    "Description": "Fusce posuere, magna sed pros quis urna.",
+    "Price": 15,
+    "PictureUrl": "images/products/air-jordan-xxxv-basketball-shoe-cgVrrs.jpg",
+    "ProductTypeId": 2,
+    "ProductBrandId": 4
+  },
+  {
+    "Name": "Blue Code Gloves",
+    "Description": "Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.",
+    "Price": 18,
+    "PictureUrl": "images/products/giay-adidas-ultra-boost-20-nu-trang-hong-01-800x800_0.jpg",
+    "ProductTypeId": 4,
+    "ProductBrandId": 3
+  },
+  {
+    "Name": "Green Code Gloves",
+    "Description": "Pellenoin pharetra nonummy pede. Mauris et orci.",
+    "Price": 15,
+    "PictureUrl": "Giay_X9000L4_trang_GZ7605_01_standard.jpg",
+    "ProductTypeId": 4,
+    "ProductBrandId": 3
+  },
+  {
+    "Name": "Purple React Gloves",
+    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa.",
+    "Price": 16,
+    "PictureUrl": "images/products/cosmic-unity-space-hippie-basketball-shoe-nDHKr4.jpg",
+    "ProductTypeId": 4,
+    "ProductBrandId": 4
+  },
+  {
+    "Name": "Green React Gloves",
+    "Description": "Pellentesque habitant m nonummy pede. Mauris et orci.",
+    "Price": 14,
+    "PictureUrl": "images/products/Giay_X9000L4_trang_GZ7605_01_standard.jpg",
+    "ProductTypeId": 4,
+    "ProductBrandId": 4
+  },
+  {
+    "Name": "Redis Red Boots",
+    "Description": "Suspendisse dunenatis eleifend. Ut nonummy.",
+    "Price": 250,
+    "PictureUrl": "images/products/air-max-270-mens-shoe-KkLcGR.jpg",
+    "ProductTypeId": 3,
+    "ProductBrandId": 6
+  },
+  {
+    "Name": "Core Red Boots",
+    "Description": "Lorem ipsum dolor sit am quis urna.",
+    "Price": 189.99,
+    "PictureUrl": "images/products/air-force-1-shadow-womens-shoe-kTgn9J.jpg",
+    "ProductTypeId": 3,
+    "ProductBrandId": 2
+  },
+  {
+    "Name": "Core Purple Boots",
+    "Description": "Pelleharetra nonummy pede. Mauris et orci.",
+    "Price": 199.99,
+    "PictureUrl": "images/products/04cac659d908cfb882be4b705219dc1c.jpg",
+    "ProductTypeId": 3,
+    "ProductBrandId": 2
+  },
+  {
+    "Name": "Angular Purple Boots",
+    "Description": "Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.",
+    "Price": 150,
+    "PictureUrl": "images/products/vans-soc-caro-2.jpg",
+    "ProductTypeId": 3,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Angular Blue Boots",
+    "Description": "Suspendisse dui  sem venenatis eleifend. Ut nonummy.",
+    "Price": 180,
+    "PictureUrl": "images/products/vn000ewzblk-5.png",
+    "ProductTypeId": 3,
+    "ProductBrandId": 1
+  }
+]

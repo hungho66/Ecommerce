@@ -1,0 +1,129 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.sidebar{
+  z-index: 100;
+}
+.sidebar-close-button ul {
+  list-style: none;
+}
+.sb-search {
+	position: absolute;
+    right:25%;
+    width: 0%;
+    min-width:50px;
+    margin: 0;
+    height: 50px;
+    float: none;
+    overflow: hidden;
+    -webkit-transition: width 0.3s;
+    -moz-transition: width 0.3s;
+    transition: width 0.3s;
+    -webkit-backface-visibility: hidden;
+    background: none;
+}
+.sb-search-input {
+	position: absolute;
+    top: 0px;
+    left: 0px;
+    border: none;
+    outline: none;
+    background:#F5F5F5;
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    z-index: 10;
+    font-size:14px;
+    color: #999;
+    padding-left: 1em;
+    padding-right: 4em;
+}
+.sb-search-input::-webkit-input-placeholder {
+	color:#999;
+}
+.sb-search-input:-moz-placeholder {
+	color: #999;
+}
+.sb-search-input::-moz-placeholder {
+	color: #999;
+}
+.sb-search-input:-ms-input-placeholder {
+	color: #999;
+}
+.sb-icon-search,.sb-search-submit  {
+	width: 50px;
+    height: 50px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    line-height: 85px;
+    text-align: center;
+    cursor: pointer;
+}
+.sb-search-submit {
+	background:#fff url('https://i.pinimg.com/474x/ae/2d/8e/ae2d8e99e43d87ca883afbf7a01c1e7b.jpg') no-repeat 7px -91px;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0); 
+    color: transparent;
+	border: none;
+	outline: none;
+	z-index: -1;
+	-webkit-appearance: none;
+}
+.sb-icon-search {
+   background:#fff url('https://i.pinimg.com/474x/ae/2d/8e/ae2d8e99e43d87ca883afbf7a01c1e7b.jpg') no-repeat 7px -91px;
+	z-index: 90;
+}
+
+.sb-search.sb-search-open,.no-js .sb-search {
+	width:42%;
+}
+.sb-search.sb-search-open .sb-icon-search,.no-js .sb-search .sb-icon-search {
+	background:#fff url('https://i.pinimg.com/474x/ae/2d/8e/ae2d8e99e43d87ca883afbf7a01c1e7b.jpg') no-repeat 7px -91px;
+	color: #fff;
+	z-index: 11;
+}
+.sb-search.sb-search-open .sb-search-submit,.no-js .sb-search .sb-search-submit {
+	z-index: 90;
+}
+.search-box {
+  margin-top: .6em;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
