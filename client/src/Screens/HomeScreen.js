@@ -1,17 +1,20 @@
 import {Link} from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import React, { useEffect,useState } from 'react';
-import { listProducts,productcount } from '../actions/productActions';
+import { listProducts,productcount,searchproduct } from '../actions/productActions';
 import Product from '../components/Product'
 import Rating from '../components/Rating';
 import '.././index.css';
 
 
 export default function HomeScreen() {
+  const [brand, setbrand] = useState('');
   const [page, setPage] = useState(1);
   const productList = useSelector((state) => state.productList);
   const productlistcount=useSelector((state)=>state.productcount);
+  const search=useSelector((state)=>state.productsearch)
   const { products, loading, error } = productList;
+  const{product}=search;
   const{count}=productlistcount;
   const dispatch = useDispatch();
   const downpagenumber = () =>{
@@ -29,15 +32,21 @@ export default function HomeScreen() {
     };
 }, [page]);
   useEffect(()=>{
-    dispatch(productcount());
+    dispatch((searchproduct(brand)));
 
     return()=>{
       //
     }
-  },[])
+  },[brand])
     return (      
       <div>
-        <ul className="products">
+        <div htmlFor="search" className="input-group mb-3">
+        <input type="text" className="form-control" placeholder="Tìm kiếm" aria-label="Recipient's username" aria-describedby="basic-addon2" onChange={(e) => setbrand(e.target.value)} />
+        <div className="input-group-append">
+          <button className="btn btn-outline-secondary" type="button">Search</button>
+        </div>
+      </div>
+        <ul className="products animated wow slideInLeft" data-wow-delay=".5s">
         {products.map((product) => (
               <Product key={product.id} product={product}></Product>
             ))

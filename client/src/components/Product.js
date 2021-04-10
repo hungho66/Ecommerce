@@ -1,14 +1,15 @@
-import React,{ useEffect } from 'react';
+import React,{ useEffect,useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useHistory } from "react-router-dom";
 
 
 function Product(props) {
     const qty=1;
     const { product } = props;
-    const handleAddToCart = () => {
-        props.history.push('/cart/'+ product.id +'?qty=' + qty);       
+    let history = useHistory();
+    const handleAddToCart = (id) => {
+        history.push('/cart/'+id+'?qty=' +qty);       
     };
-
     return (
         <li key={product.id}>
         <div className="product-grid2 transmitv">
@@ -23,7 +24,7 @@ function Product(props) {
         </li>
       </ul>
       <div className="transmitv single-item">
-        <button onClick={handleAddToCart} type="submit" className="transmitv-cart ptransmitv-cart add-to-cart">
+        <button onClick={ () => handleAddToCart(product.id)} type="submit" className="transmitv-cart ptransmitv-cart add-to-cart">
             Add to Cart
         </button>
         {/* <form action="#" method="post">

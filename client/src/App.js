@@ -2,6 +2,7 @@
 import React from 'react';
 import './App.css'
 import HomeScreen from './Screens/HomeScreen';
+import Home from './Screens/Home'
 import ProductScreen from './Screens/ProductScreen';
 import CartScreen from './Screens/CartScreen';
 import ShippingAddressScreen from './Screens/ShippingAddressScreen';
@@ -38,6 +39,15 @@ function App() {
         <Link to="/">Shoes_ST</Link>
       </div>
       <div className="header-links">
+      {/* <div className="search-box">
+        <div id="sb-search" className="sb-search">
+          <form>
+            <input className="sb-search-input" placeholder="Enter your search term..." type="search" id="search" />
+            <input className="sb-search-submit" type="submit" defaultValue />
+            <span className="sb-icon-search"> </span>
+          </form>
+        </div>
+      </div> */}
         <Link to="/cart">
           Cart
           {cartItems.length >0 && 
@@ -49,12 +59,12 @@ function App() {
                   {userInfo.displayName} <i className="fa fa-caret-down"></i>{' '}
                 </Link>
                 <ul className="dropdown-content">
-                  <li>
+                  {/* <li>
                     <Link to="/profile">User Profile</Link>
                   </li>
                   <li>
                     <Link to="/orderhistory">Order History</Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link to="#signout" onClick={signoutHandler}>
                       Sign Out
@@ -72,7 +82,7 @@ function App() {
       <button className="sidebar-close-button" onClick={closeMenu}>x</button>
       <ul>
         <li>
-          <a href="index.html">Nike</a>
+          <Link to="/products">Products</Link>
         </li>
 
         <li>
@@ -93,9 +103,10 @@ function App() {
         <Route path="/signin" component={SigninScreen} />
         <Route path="/RegisterScreen" component={RegisterScreen} /> 
         <Route path="/product/:id" component={ProductScreen} />
-        <Route path="/" exact={true} component={HomeScreen} />
+        <Route path="/products" component={HomeScreen} />
         <Route path="/cart/:id?" component={CartScreen} />
         <Route path="/shipping" component={ShippingAddressScreen}></Route>
+        <Route path="/" exact={true} component={Home}></Route>
       </div>
     </main>
     <footer className="footer">

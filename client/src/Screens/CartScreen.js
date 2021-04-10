@@ -97,7 +97,7 @@ function CartScreen(props) {
               <ul>
               {
               cartItems.length === 0 ?
-                <div>
+              <div>
                   
               </div>
               :cartItems.map(item=>
@@ -105,8 +105,8 @@ function CartScreen(props) {
                 <li>Total <i>-</i> <span>$ {cartItems.reduce((a, c) => a + c.price * c.qty, 0)}</span></li>
               </ul>
             </div>
-            <div className="checkout-right-basket animated wow slideInRight" data-wow-delay=".5s">
-              <a href="single.html"><span className="glyphicon glyphicon-menu-left" aria-hidden="true" />Continue Shopping</a>
+            <div  onClick={checkoutHandler} className="checkout-right-basket animated wow slideInRight" data-wow-delay=".5s">
+              <button disabled={cartItems.length === 0} href=""><span className="glyphicon glyphicon-menu-left" aria-hidden="true" />Checkout</button>
             </div>
             <div className="clearfix"> </div>
           </div>

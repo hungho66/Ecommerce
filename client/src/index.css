@@ -506,7 +506,7 @@ td.invert-image a img {
 	  border-bottom: 1px solid #DDD;
     margin: 2em 0 0;
 }
-.checkout-right-basket a{
+.checkout-right-basket button{
 	padding:10px 30px;
 	color:#fff;
 	font-size:1em;
@@ -602,7 +602,7 @@ tbody > tr:nth-child(odd) {
 
 .product-grid2 .product-image2 img {
   width: 340px;
-  height: auto;
+  height: 340px;
 }
 
 .product-image2 .pic-1 {
@@ -1013,3 +1013,60 @@ border-color:#00bdbd;
 .btn_sumit{
   margin-top: 40px;
 }
+/* ----Home----- */
+.banner{
+	background:url(https://i.insider.com/59c14b709803c50d098b68e0?width=1000&format=jpeg&auto=webp) no-repeat 0px 0px;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	-ms-background-size:cover;
+	min-height:700px;
+  max-width: 1349px;
+}
+.banner-info h3{
+	font-size:5em;
+	color:#fff;
+	margin:0;
+}
+.banner-info {
+    /* margin: 9em 0 0; */
+    text-align: center;
+}
+.banner-info h4{
+	font-size: 3em;
+    color: #fff;
+    margin: 0em 0 0 7.5em;
+	font-weight:300;
+	font-family: 'Lato', sans-serif;
+}
+.banner-info h4 span{
+	padding: 0.8em .9em;
+    background: #ffc229;
+    border-radius: 100%;
+    display: inline-block;
+}
+.banner-info h4 span i{
+	display:block;
+}
+.banner-info1 p{
+	font-size:2em;
+	color:#fff;
+	margin:0;
+	line-height:1.8em;
+	width:65%;
+}
+.banner-wrap{
+	padding:0px 0 5em;
+}
+/* search */
+.input-group{
+  margin-top: 30px !important;
+  width: 300px !important;
+  height: 35px !important;
+  margin: auto;
+}
+.form-control{
+  
+}
+

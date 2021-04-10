@@ -1,0 +1,36 @@
+﻿<Properties StartupConfiguration="{81700B84-A4BC-469D-9DD8-A934034E5657}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="API/Startup.cs">
+    <Files>
+      <File FileName="API/bin/Release/net5.0/publish/Dockerfile" Line="5" Column="1" />
+      <File FileName="Infrastructure/Identity/Migrations/20210410032634_Initial.cs" Line="3" Column="54" />
+      <File FileName="Infrastructure/Identity/Migrations/20210410032634_Initial.Designer.cs" Line="8" Column="7" />
+      <File FileName="API/appsettings.Development.json" Line="17" Column="5" />
+      <File FileName="API/appsettings.Production.json" Line="20" Column="1" />
+      <File FileName="Infrastructure/Data/Migrations/20210410034919_Initial.cs" Line="113" Column="42" />
+      <File FileName="API/Controllers/ProductsController.cs" Line="39" Column="49" />
+      <File FileName="Core/Specifications/ProductsWithTypesAndBrandsSpecification.cs" Line="7" Column="70" />
+      <File FileName="Core/Specifications/ProductSpecParams.cs" Line="3" Column="18" />
+      <File FileName="Core/Specifications/BaseSpecification.cs" Line="35" Column="10" />
+      <File FileName="API/Startup.cs" Line="44" Column="110" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Option id="ShowAllFiles" value="True" />
+          <Node name="skinet" expanded="True">
+            <Node name="API" expanded="True">
+              <Node name="Startup.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.API PreferredExecutionTarget="/Applications/Microsoft Edge.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

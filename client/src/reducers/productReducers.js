@@ -9,6 +9,9 @@ import {
     PRODUCT_COUNT_REQUEST,
     PRODUCT_COUNT_SUCCESS,
     PRODUCT_COUNT_FAIL,
+    PRODUCT_SEARCH_REQUEST,
+    PRODUCT_SEARCH_SUCCESS,
+    PRODUCT_SEARCH_FAIL
 } from '../constants/productConstants';
 function productListReducer(state = { products: []}, action) {
     switch (action.type) {
@@ -46,9 +49,22 @@ function productListReducer(state = { products: []}, action) {
         return state;
     }
   }
+  function productsearchreducer(state ={search: []}, action){
+    switch(action.type){
+      case PRODUCT_SEARCH_REQUEST:
+        return{loading:true};
+      case PRODUCT_SEARCH_SUCCESS:
+        return{loading: false, search:action.payload};
+      case PRODUCT_SEARCH_FAIL:
+        return{loading:false,error:action.payload};
+      default:
+        return state;
+    }
+  }
   export {
     productListReducer,
     productDetailsReducer,
-    productcountreducer
+    productcountreducer,
+    productsearchreducer
 };
 

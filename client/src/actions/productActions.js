@@ -8,7 +8,11 @@ import {
     PRODUCT_DETAILS_FAIL,
     PRODUCT_COUNT_REQUEST,
     PRODUCT_COUNT_SUCCESS,
-    PRODUCT_COUNT_FAIL
+    PRODUCT_COUNT_FAIL,
+    PRODUCT_SEARCH_REQUEST,
+    PRODUCT_SEARCH_SUCCESS,
+    PRODUCT_SEARCH_FAIL
+
 }
 from '../constants/productConstants';
 import axios from 'axios';
@@ -44,8 +48,19 @@ const productcount = () => async(dispatch) =>{
     dispatch({type:PRODUCT_COUNT_FAIL, payload:error.message});
   }
 }
+const searchproduct =(brand) => async(dispatch)=>{
+  try{
+    dispatch({type:PRODUCT_SEARCH_REQUEST,payload:{brand}})
+    const {data} = await axios.get("https://localhost:5001/api/Products?Search="+ brand);
+    dispatch({type: PRODUCT_SEARCH_SUCCESS, payload:data.data});
+  }
+  catch(error){
+    dispatch({type:PRODUCT_SEARCH_FAIL,payload:error.message})
+  }
+}
 export{
     listProducts,
     detailsProduct,
-    productcount
+    productcount,
+    searchproduct
 };
